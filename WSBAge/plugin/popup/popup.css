@@ -1,0 +1,15 @@
+body {
+    min-width: 200px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+header {
+    width: 100%;
+    background-color: #4e555b;
+    color: whitesmoke;
+}
+
+#setUp {
+    display: none;
+}

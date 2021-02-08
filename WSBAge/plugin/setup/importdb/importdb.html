@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WSBot Stopper First Time Setup</title>
+    <link rel="stylesheet" href="importdb.css">
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+    <link rel="stylesheet" href="../centered.css">
+</head>
+<body>
+<div class="main-content">
+    <h1>WSBot Stopper</h1>
+    <p>This plugin uses stores account ages locally rather than pulling from a website. This greatly improves performance.</p>
+    <p>The locally stored data needs to be first converted to a readily accessible format. This should take under a minute.</p>
+    <p>Closing this page will mean that the process will need to restart.</p>
+
+    <!-- These two elements are hidden by default, and are shown to indicate errors. -->
+    <p id="dbOpenError">Please try again and allow permission.</p>
+    <p id="dbStoreError">Something went wrong. Try again or contact support if available.</p>
+
+    <button class="btn btn-primary" id="beginProcessing">Begin</button>
+    <!-- This only appears once the processing starts. -->
+    <div id="processingInformation">
+        <label for="processingProgressbar" id="processingPercent">Processing Data: 0%</label>
+        <progress id="processingProgressbar" max="100" value="0"></progress>
+    </div>
+    <script src="importdb.js"></script>
+</div>
+</body>
+</html>

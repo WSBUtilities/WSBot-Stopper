@@ -1,0 +1,28 @@
+{
+  "name": "WSBot Stopper",
+  "version": "1.0",
+  "description": "An extension to list when an account first participated in r/wallstreetbets next to their name.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "declarativeContent",
+    "tabs",
+    "https://*.reddit.com/*"
+  ],
+  "content_scripts": [{
+    "js": ["interacting/flairAdder.js"],
+    "matches": ["https://www.reddit.com/*", "https://old.reddit.com/*"]
+  }],
+  "page_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "manifest_version": 2
+}

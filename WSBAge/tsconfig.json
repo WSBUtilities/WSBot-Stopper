@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es2015",
+    "types": [
+      "chrome"
+    ],
+    "rootDir": "./"
+  },
+  "include": [
+    "*",
+    "*/*",
+    "*/*/*"
+  ],
+  "exclude": []
+}
